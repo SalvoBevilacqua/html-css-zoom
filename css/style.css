@@ -53,8 +53,6 @@ body {
     margin: 0 auto;
     height: 80%;
     overflow: auto;
-    /* DEBUG */
-    /* background-color: aquamarine; */
 }
 
 .col {
@@ -81,18 +79,29 @@ footer {
     bottom: 0;
     margin-top: 1.5rem;
     background-color: gray;
-    padding: .4rem 0;
     width: 100%;
     font-size: .5rem;
 }
 
 .card {
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     justify-content: flex-start;
     align-items: center;
+    align-content: center;
 }
 
-.audio, .video, .options {
+.audio_video {
+    padding-left: .7rem;
+    gap: .4rem;
+}
+
+.options {
+    flex-grow: 1;
+    gap: .4rem;
+    justify-content: center;
+}
+
+.icon {
     text-align: center;
 }
 
@@ -106,20 +115,17 @@ footer {
     font-size: .6rem;
 }
 
-
 .exit {
     text-align: right;
 }
 
-.audio > *, .video > * {
+.icon > * {
     display: block;
 }
 
-/* .audio_video > div {
-    margin-right: 1em;
-} */
-
-.audio_video {
-    padding-left: .7rem;
-    gap: .4rem;
+.exit span {
+    display: inline-block;
+    padding: 0.9rem .6rem;
+    color: red;
+    background-color: rgb(206, 206, 206);
 }
