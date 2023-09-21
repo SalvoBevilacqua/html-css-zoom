@@ -17,6 +17,8 @@ body {
     height: 100vh;
     background-color: black;
     position: relative;
+    /* DEBUG */
+    border: 2px solid red;
 }
 
 .flex {
@@ -38,4 +40,29 @@ body {
     padding: .15rem .15rem;
     background-color: gray;
     border-radius: .2rem;
+}
+
+.container {
+    width: 90%;
+    margin: 2rem auto;
+    /* DEBUG */
+    background-color: aquamarine;
+}
+
+.col {
+    width: calc(100% / 7 - 1em);
+    position: relative;
+}
+
+.col > img {
+    display: block;
+}
+
+.user {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: .5rem;
+    padding: .3rem;
+    background-color: rgba(128, 128, 128, 0.5);
 }
