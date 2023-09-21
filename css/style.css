@@ -46,12 +46,13 @@ body {
     width: 90%;
     margin: 2rem auto;
     /* DEBUG */
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .col {
-    width: calc(100% / 7 - 1em);
+    width: calc(100% / 7 - .3em);
     position: relative;
+    margin-bottom: .3em;
 }
 
 .col > img {
