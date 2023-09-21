@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +19,7 @@ body {
 .viewport {
     width: 100%;
     height: 100vh;
+    padding-top: 3rem;
     background-color: black;
     position: relative;
 }
@@ -24,6 +29,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
+    /* align-content: flex-start; */
 }
 
 .viewport_button {
@@ -44,7 +51,8 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
-    padding-top: 2rem;
+    height: 80%;
+    overflow: auto;
     /* DEBUG */
     /* background-color: aquamarine; */
 }
@@ -66,4 +74,13 @@ body {
     font-size: .5rem;
     padding: .3rem;
     background-color: rgba(128, 128, 128, 0.5);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: 1.5rem;
+    background-color: gray;
+    padding: .7rem;
+    width: 100%;
 }
