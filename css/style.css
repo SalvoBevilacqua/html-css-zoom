@@ -17,8 +17,6 @@ body {
     height: 100vh;
     background-color: black;
     position: relative;
-    /* DEBUG */
-    border: 2px solid red;
 }
 
 .flex {
@@ -40,11 +38,13 @@ body {
     padding: .15rem .15rem;
     background-color: gray;
     border-radius: .2rem;
+    z-index: 1;
 }
 
 .container {
     width: 90%;
-    margin: 2rem auto;
+    margin: 0 auto;
+    padding-top: 2rem;
     /* DEBUG */
     /* background-color: aquamarine; */
 }
