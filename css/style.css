@@ -7,3 +7,35 @@
 img {
     max-width: 100%;
 }
+
+body {
+    color: white;
+}
+
+.viewport {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.viewport_button {
+    position: absolute;
+    top: .4rem;
+    right: .4rem;
+    font-size: .5rem;
+}
+
+.viewport_button > div, .viewport_button > i {
+    margin-left: .3rem;
+    padding: .15rem .15rem;
+    background-color: gray;
+    border-radius: .2rem;
+}
