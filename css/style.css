@@ -29,8 +29,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
-    /* align-content: flex-start; */
+    /* align-content: space-between; */
+    align-content: flex-start;
 }
 
 .viewport_button {
@@ -52,7 +52,7 @@ body {
     width: 90%;
     margin: 0 auto;
     height: 80%;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .col {
@@ -81,6 +81,8 @@ footer {
     background-color: gray;
     width: 100%;
     font-size: .5rem;
+    height: 2.5rem;
+    align-items: center;
 }
 
 .card {
